@@ -1,7 +1,9 @@
 function playSound(e) {
   const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
 
-  if (!audio) { return; }
+  if (!audio) {
+    return;
+  }
 
   const key = document.querySelector(`.key[data-key="${e.keyCode}"]`);
   // rewind first
